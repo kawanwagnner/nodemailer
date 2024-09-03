@@ -92,7 +92,7 @@ app.post("/send-email", async (req, res) => {
         <p><strong>Nome:</strong> ${nome}</p>
         <p><strong>Email:</strong> <a href="mailto:${email}" style="color: #0056b3; text-decoration: none;">${email}</a></p>
         <p><strong>WhatsApp:</strong> ${zap}</p>
-        <p><strong>Mensagem:</strong> ${mensagem}</p>
+        <p><strong>Por onde nos encontrou:</strong> ${mensagem}</p>
         <hr style="border: 0; border-top: 1px solid #ddd; margin: 20px 0;">
         <h3 style="color: #28a745;">Detalhes Financeiros</h3>
         <p><strong>Gasto Mensal:</strong> R$ ${gasto}</p>
