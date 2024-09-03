@@ -51,15 +51,8 @@ function validateEmailInput(input) {
     return "Mensagem é obrigatória e deve ser uma string válida.";
   }
 
-  if (
-    isNaN(economiaPorAno) ||
-    isNaN(economiaPorMes) ||
-    isNaN(gasto) ||
-    economiaPorAno <= 0 ||
-    economiaPorMes <= 0 ||
-    gasto <= 0
-  ) {
-    return "Economia por Ano, Economia por Mês e Gasto devem ser números válidos maiores que zero.";
+  if (isNaN(economiaPorAno) || isNaN(economiaPorMes) || !gasto) {
+    return "Economia por Ano, Economia por Mês e Gasto devem ser números válidos diferentes de zero.";
   }
 
   return null; // Retorna null se todas as validações passarem
